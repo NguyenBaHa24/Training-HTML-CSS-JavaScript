@@ -1,0 +1,66 @@
+.header-bar {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  justify-content: space-between;
+  background-color: blanchedalmond;
+}
+
+.logo {
+  display: flex;
+  background-color: blanchedalmond;
+  padding: 20px 40px;
+  width: 100px;
+}
+
+.logoimg {
+  height: 30px;
+  max-width: 100%;
+}
+
+.spread-menu {
+  display: flex;
+  background-color: blanchedalmond;
+  padding: 20px 40px;
+  flex: 1;
+  max-width: 300px;
+}
+
+.hamburger-menu {
+  display: flex;
+  background-color: blanchedalmond;
+  padding: 20px 40px;
+  width: 180px;
+  flex-direction: row;
+}
+
+.hamburger-menu button {
+  display: flex;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: 50px;
+  justify-content:flex-end;
+  align-items: center;
+  font-size: medium;
+}
+
+
+
+.side-bar {
+  display: flex;
+  background-color: aliceblue;
+  border: 10px;
+  border-radius: 20px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.contentsb {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  padding: 20px 400px;
+  gap: 20px; /* Khoảng cách giữa các mục */
+  width: 100%;
+}
