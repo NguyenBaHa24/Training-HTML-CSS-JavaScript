@@ -60,7 +60,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
-  padding: 20px 400px;
-  gap: 20px; /* Khoảng cách giữa các mục */
+  padding: 50px 40px;
+  gap: 50px; /* Khoảng cách giữa các mục */
   width: 100%;
 }

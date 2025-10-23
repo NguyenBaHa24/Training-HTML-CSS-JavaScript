@@ -1,0 +1,29 @@
+/* Default: Hide hamburger, show horizontal links (for desktop) */
+.hamburger {
+  display: none;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}  
+.nav-links li {
+  margin-left: 20px;
+}
+
+/* For screens 768px and smaller (Mobile) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide the horizontal links */
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hamburger {
+    display: block; /* Show the hamburger icon */
+  }
+
+  /* JavaScript would be used to toggle the 'active' class */
+  .nav-links.active {
+    display: flex;
+  }
+}
