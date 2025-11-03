@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head> <title>Boolean</title></head>
+  <body>
+    <script>
+      /* let a = 2;
+      if (a >= 3) {
+        console.log ('very good')
+      }
+      else {
+        console.log ('not good')
+      };
+      console.log (!!a);
+
+
+      let score = 74;
+      if (score === 85) {
+        console.log ('very oke');
+      }
+      else if (score < 85 && score >= 70) {
+        console.log ('oke');
+      }
+      else if (score < 70 && score >= 50) {
+        console.log ('mid');
+      }
+      else if (score < 50) {
+        console.log ('bad');
+      }
+      else {
+        console.log ('too bad');
+      }; */
+
+/* function helloComp()
+      {
+        console.log('say hello');
+      }
+       helloComp();
+*/
+
+/*     const calculateT = (price, quantity) => {
+        const subT = price * quantity;
+        const tax = subT * 0.1;
+        return subT + tax;
+      };
+      const result = calculateT(3,9);
+      console.log(result);
+*/
+
+     const synonyms =
+      {"happy": ["joyful", "excited"]
+        "sad": ["unhappy", "sorrow"]
+      }; 
+
+      function paraphraseWithFor(sentence) {
+    const words = sentence.split(' ');
+    let result = [];
+    
+    for (let i = 0; i < words.length; i++) {
+        let word = words[i].toLowerCase();
+        let punctuation = '';
+        
+        // Xử lý dấu câu (.,!?)
+        if (/[.,!?]/.test(word[word.length - 1])) {
+            punctuation = word[word.length - 1];
+            word = word.slice(0, -1);
+        }
+        
+        if (synonymDictionary[word]) {
+            const synonyms = synonymDictionary[word];
+            const randomIndex = Math.floor(Math.random() * synonyms.length);
+            result.push(synonyms[randomIndex] + punctuation);
+        } else {
+            result.push(words[i]);
+        }
+    }
+    
+    return result.join(' ');
+}
+    </script>
+  </body>
+</html>
